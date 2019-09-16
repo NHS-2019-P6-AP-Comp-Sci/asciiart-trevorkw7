@@ -1,5 +1,5 @@
 
-public class Asii_Art {
+public class Playing_Cards_ASCII_Art {
 
 	//prints title
 	public static void deckTitle()
