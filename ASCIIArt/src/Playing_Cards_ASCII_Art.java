@@ -11,6 +11,17 @@ public class Playing_Cards_ASCII_Art {
 	//prints card by passing by using the "cardType" parameter
 	public static void cardCreator(String cardType){ 
 		
+		if(cardType == "10") {
+			System.out.println(".------.");
+			System.out.println("|" + cardType + ".-. |");
+			System.out.println("| :/\\: |");
+			System.out.println("| :\\/: |");
+			System.out.println("| '-'" + cardType + "|");
+			System.out.println("\"------\"");
+				
+		}
+		
+		else {
 		//generic card template 
 		System.out.println(".------.");
 		System.out.println("|" + cardType + ".--. |");
@@ -19,6 +30,7 @@ public class Playing_Cards_ASCII_Art {
 		System.out.println("| '--'" + cardType + "|");
 		System.out.println("\"------\"");
 		
+		}
 		
 	}
 	
