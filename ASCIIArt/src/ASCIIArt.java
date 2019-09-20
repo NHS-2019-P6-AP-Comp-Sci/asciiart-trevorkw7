@@ -4,7 +4,7 @@ public class ASCIIArt {
 	//prints title
 	public static void deckTitle()
 	{
-		System.out.println("Welcomee! Here's your deck");
+		System.out.println("Welcome! Here's your deck");
 	}
 	
 	
