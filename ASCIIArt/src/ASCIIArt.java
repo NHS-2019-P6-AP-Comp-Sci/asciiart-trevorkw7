@@ -1,27 +1,89 @@
-/**
- * Unit 1 Project
- * 
- * In this project you have the opportunity to create a piece of artwork using ASCII 
- * (American Standard Code for Information Interchange). Using the already created file 
- * named `ASCIIArt.java` write a program that outputs your artwork to the console. 
- * The goal of this project is to use ONLY what we have learned in Unit 1 to create 
- * anything you would like so be creative (and school appropriate). Artwork must also have a caption describing what it's depicting.  
- * 
- * For those of you who have dabbled in coding before, try to contain your code to 
- * just what we have discussed in this unit.  
- * 
- * @author Mr. Rasmussen 
- *
- */
-
-// YOU CODE HERE :) 
 
 public class ASCIIArt {
-	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
+
+	//prints title
+	public static void deckTitle()
+	{
+		System.out.println("Welcome! Here's your deck");
 	}
+	
+	
+	//prints card by passing by using the "cardType" parameter
+	public static void cardDiamond(String cardType){ 
+		
+		if(cardType == "10") {
+			System.out.println(".------.");
+			System.out.println("|" + cardType + ".-. |");
+			System.out.println("| :/\\: |");
+			System.out.println("| :\\/: |");
+			System.out.println("| '-'" + cardType + "|");
+			System.out.println("\"------\"");
+				
+		}
+		
+		else {
+		//generic card template 
+		System.out.println(".------.");
+		System.out.println("|" + cardType + ".--. |");
+		System.out.println("| :/\\: |");
+		System.out.println("| :\\/: |");
+		System.out.println("| '--'" + cardType + "|");
+		System.out.println("\"------\"");
+		
+		}
+		
+	}
+	
+	
+	public static void cardSpade(String cardType) {
+		
+		System.out.println(".------.");
+		System.out.println("|" + cardType + ".--. |");
+		System.out.println("| :/\\: | ");
+		System.out.println("| (__) |");
+		System.out.println("| '--'" + cardType + "|");
+		System.out.println("\"------\"");
+		
+	}
+	
+	public static void cardClover(String cardType) {
+		
+		System.out.println(".------.");
+		System.out.println("|" + cardType + ".--. |");
+		System.out.println("| :(): |");
+		System.out.println("| ()() |");
+		System.out.println("| '--'" + cardType + "|");
+		System.out.println("\"------\"");
+		
+	}
+	
+	
+	
+	
+	
+	public static void main (String[] args) {
+		
+		//call deckTitle method to print title
+		deckTitle();
+		
+		//call cardDiamond method and pass cardType argument to print card to console
+		cardDiamond("A");
+		cardSpade("2");
+		cardDiamond("3");
+		cardSpade("4");
+		cardClover("5");
+		cardDiamond("6");
+		cardSpade("7");
+		cardDiamond("8");
+		cardSpade("9");
+		cardDiamond("10");
+		cardClover("J");
+		cardClover("Q");
+		cardSpade("K");
+		
+		
+		
+		
+	}
+	
 }
